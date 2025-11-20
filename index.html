@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dea Puspita | Personal Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D63484',
+                        secondary: '#402B3A',
+                        accent: '#F8F4EC',
+                        dark: '#1E1E1E',
+                        light: '#F9F9F9'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-6 py-16">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12 mb-24">
+            <div class="md:w-1/2 space-y-6">
+                <h1 class="text-5xl md:text-6xl font-serif font-bold text-dark leading-tight">Dea Puspita</h1>
+                <p class="text-xl text-secondary/80 font-medium">Creative Designer & Brand Strategist</p>
+                <p class="text-lg text-secondary/60 leading-relaxed">Crafting memorable digital experiences with elegant minimalism and thoughtful design.</p>
+                <div class="flex gap-4 mt-8">
+                    <a href="#work" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-md font-medium transition-all shadow hover:shadow-lg">
+                        View Work
+                    </a>
+                    <a href="#contact" class="border border-secondary/20 hover:border-primary text-secondary hover:text-primary px-8 py-3 rounded-md font-medium transition-all">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-72 h-72 md:w-80 md:h-80">
+                    <img src="http://static.photos/minimal/640x360/42" alt="Dea Puspita" 
+                         class="rounded-full w-full h-full object-cover border-8 border-white shadow-2xl">
+                    <div class="absolute -bottom-4 -right-4 bg-primary text-white p-3 rounded-full shadow-xl">
+                        <i data-feather="sparkles" class="w-6 h-6"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-24 py-12">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-dark mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-secondary/70 leading-relaxed mb-6">
+                    With 5+ years of experience in digital design, I specialize in creating cohesive brand identities that resonate with audiences. My approach combines aesthetic sensibility with strategic thinking to deliver designs that are both beautiful and effective.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <i data-feather="pen-tool" class="w-8 h-8 text-primary mx-auto mb-4"></i>
+                        <h3 class="font-medium text-dark">UI/UX Design</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <i data-feather="layers" class="w-8 h-8 text-primary mx-auto mb-4"></i>
+                        <h3 class="font-medium text-dark">Branding</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <i data-feather="code" class="w-8 h-8 text-primary mx-auto mb-4"></i>
+                        <h3 class="font-medium text-dark">Web Design</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <i data-feather="camera" class="w-8 h-8 text-primary mx-auto mb-4"></i>
+                        <h3 class="font-medium text-dark">Photography</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-dark mb-4">Selected Work</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <img src="http://static.photos/minimal/1200x630/1" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-medium text-dark mb-2">Elegant Cosmetics</h3>
+                        <p class="text-secondary/60 mb-4">Brand Identity & Packaging</p>
+                        <a href="#" class="text-primary hover:text-secondary font-medium">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <img src="http://static.photos/minimal/1200x630/2" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-medium text-dark mb-2">Minimal App</h3>
+                        <p class="text-secondary/60 mb-4">Mobile UI/UX Design</p>
+                        <a href="#" class="text-primary hover:text-secondary font-medium">View Case Study →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-md font-medium transition-all">
+                    View All Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mb-24 py-16 bg-primary/5 rounded-xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-dark mb-4">Client Words</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <i data-feather="quote" class="w-12 h-12 text-primary/30 mx-auto mb-6"></i>
+                    <p class="text-xl font-serif italic text-secondary/80 mb-8">
+                        "Dea's design sensibility is exceptional. She transformed our brand identity with her elegant minimal approach while capturing our essence perfectly."
+                    </p>
+                    <div class="flex items-center justify-center gap-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-medium text-dark">Sarah Johnson</h4>
+                            <p class="text-sm text-secondary/60">CEO, Elegant Cosmetics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-serif font-bold text-dark mb-4">Let's Collaborate</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 md:p-12">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-secondary mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-secondary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-secondary mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-secondary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-secondary mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-secondary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Subject">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-secondary mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-secondary/20 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="pt-2">
+                            <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-medium py-3 px-6 rounded-md shadow hover:shadow-lg transition-all">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
